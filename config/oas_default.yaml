@@ -1,0 +1,40 @@
+oas:
+  topics:
+    front: "/rangefinder/front"
+    left:  "/rangefinder/left"
+    right: "/rangefinder/right"
+    rear:  "/rangefinder/rear"
+
+  sensor_angles:
+    front: 0.0
+    left:  1.5708      # pi/2
+    right: -1.5708     # -pi/2
+    rear:  3.1416      # pi
+
+  apf:
+    eta: 1.0
+    d0: 5.0
+    d_min_clamp: 0.3
+
+  assessment:
+    d_activate: 3.0
+    d_deactivate: 5.0
+    n_activate: 3
+    n_deactivate: 5
+    poll_interval_ms: 50
+    sensor_stale_ms: 500
+    path_alignment_threshold_rad: 0.7854   # pi/4
+    on_waypoint_tolerance: 1.0
+
+  avoidance:
+    d_escape: 4.0
+    d_escape_min: 2.0
+    d_escape_max: 10.0
+    f_min_threshold: 0.01
+
+  bypass:
+    d_safety: 5.0
+    d_safety_min: 3.0
+
+  cooldown_ms: 2000
+  priority: 50
